@@ -1,0 +1,64 @@
+*{box-sizing:border-box}
+:root{--pink:#ff5f8f;--deep:#7d2446;--cream:#fff8fb;--text:#42202c}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:Poppins,system-ui,sans-serif;overflow-x:hidden}
+.hearts{position:fixed;inset:0;pointer-events:none;z-index:10;overflow:hidden}
+.float-heart{position:absolute;bottom:-40px;opacity:.45;animation:rise linear forwards;font-size:18px}
+@keyframes rise{to{transform:translateY(-110vh) rotate(20deg);opacity:0}}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:70px 22px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 35%,#ffd8e5 0,#fff0f5 35%,#fff8fb 70%)}
+.glow{position:absolute;width:380px;height:380px;border-radius:50%;background:#ffc0d5;filter:blur(80px);opacity:.5}
+.hero>*{position:relative}
+.eyebrow,.small-title{letter-spacing:3px;text-transform:uppercase;font-size:12px;color:#b24c70;font-weight:600}
+h1,h2,h3,p{margin-top:0}
+.hero h1{font-family:"Dancing Script",cursive;font-size:clamp(64px,15vw,120px);line-height:.9;margin:15px 0;color:#7d2446;font-weight:700}
+.hero h1 span{font-family:inherit;color:var(--pink)}
+.hero-sub{max-width:560px;font-size:16px;line-height:1.8;color:#805b67;margin:0 auto 30px}
+.primary,.yes,.no{border:0;border-radius:999px;padding:15px 25px;font-family:inherit;font-weight:600;cursor:pointer;transition:.25s}
+.primary{background:#7d2446;color:white;box-shadow:0 12px 30px #7d244633}
+.primary:hover,.yes:hover{transform:translateY(-3px);box-shadow:0 16px 35px #7d244655}
+.scroll-hint{margin-top:45px;font-size:11px;letter-spacing:2px;color:#a87887}
+.music-btn{position:fixed;right:16px;top:16px;z-index:30;border:1px solid #ffffffaa;background:#ffffffcc;backdrop-filter:blur(10px);color:#7d2446;border-radius:999px;padding:10px 15px;font:600 12px Poppins;cursor:pointer;box-shadow:0 5px 20px #7d244622}
+section{padding:100px 20px;max-width:1050px;margin:auto}
+.section-heading{text-align:center;margin-bottom:42px}
+.section-heading span{font-size:11px;letter-spacing:3px;color:#c46a86}
+.section-heading h2,.question h2{font-family:"Dancing Script",cursive;font-size:clamp(42px,8vw,68px);line-height:1;margin:8px 0 12px;color:#7d2446}
+.section-heading p{color:#8f6975;font-size:14px}
+.photo-card{max-width:650px;margin:auto;background:white;padding:12px;border-radius:24px;box-shadow:0 25px 70px #7d24461a;transform:rotate(-1deg)}
+.photo-card img{display:block;width:100%;height:auto;border-radius:16px}
+.photo-caption{text-align:center;font-family:"Dancing Script";font-size:24px;padding:16px 8px 10px;color:#7d2446}
+.letter{max-width:850px}
+.letter-card{position:relative;background:#fff;border:1px solid #f2dbe3;border-radius:28px;padding:55px clamp(25px,7vw,80px);box-shadow:0 30px 80px #7d244612;text-align:center}
+.seal{width:55px;height:55px;display:grid;place-items:center;margin:-83px auto 25px;background:#ffedf3;border:1px solid #f4c9d8;border-radius:50%;color:#ff5f8f;font-size:23px}
+.letter-card h2{font-family:"Dancing Script";font-size:45px;color:#7d2446}
+.letter-card p:not(.small-title):not(.signature){font-size:15px;line-height:2;color:#725662}
+.signature{font-family:"Dancing Script";font-size:25px;color:#9b566d;margin-top:30px}
+.signature span{font-size:34px;color:#7d2446}
+.reason-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.reason-grid article{background:white;border:1px solid #f2dbe3;border-radius:22px;padding:28px;min-height:190px}
+.reason-grid b{color:#ff6d97;font-size:12px;letter-spacing:2px}
+.reason-grid h3{font-family:"Dancing Script";font-size:30px;color:#7d2446;margin:15px 0 8px}
+.reason-grid p{font-size:13px;line-height:1.8;color:#80636d}
+.timeline-card{max-width:700px;margin:auto;background:#fff;border-radius:26px;padding:35px 28px;box-shadow:0 25px 70px #7d24461a}
+.timeline-item{display:grid;grid-template-columns:18px 1fr;gap:20px;padding:0 0 35px;position:relative}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-item:not(:last-child):after{content:"";position:absolute;left:8px;top:18px;bottom:0;width:2px;background:#f1c9d6}
+.dot{width:18px;height:18px;border-radius:50%;background:#ff7da2;box-shadow:0 0 0 6px #ffedf3;z-index:1}
+.timeline-item span{font-size:10px;letter-spacing:2px;color:#bd607c}
+.timeline-item h3{font-family:"Dancing Script";font-size:29px;color:#7d2446;margin:6px 0}
+.timeline-item p{font-size:13px;line-height:1.7;color:#80636d}
+.question{text-align:center;min-height:80vh;display:grid;place-items:center;align-content:center}
+.question-heart{font-size:60px;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.question h2{max-width:800px}
+.question>p:not(.eyebrow){color:#80636d}
+.buttons{display:flex;gap:12px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.yes{background:#ff5f8f;color:#fff}
+.no{background:#fff;border:1px solid #efcbd8;color:#7d2446}
+.final-message{display:none;margin:35px auto 0;background:#fff;border:1px solid #f3d5df;border-radius:25px;padding:30px;max-width:600px;animation:pop .5s ease}
+.final-message.show{display:block}
+@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+.final-message h3{font-family:"Dancing Script";font-size:38px;color:#7d2446}
+.final-message p{font-size:14px;line-height:1.8;color:#725662}
+.final-message span{font-family:"Dancing Script";font-size:25px;color:#7d2446}
+footer{text-align:center;padding:35px 20px;color:#a87887;font-size:11px;letter-spacing:1px}
+@media(max-width:650px){section{padding:75px 16px}.reason-grid{grid-template-columns:1fr}.music-btn span{display:none}.music-btn{width:42px;height:42px;padding:0}.letter-card{padding:50px 22px}.letter-card h2{font-size:39px}}

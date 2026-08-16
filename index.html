@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff5f8f" />
+  <title>For Diksha ❤️ — From Mohit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <button class="music-btn" id="musicBtn" aria-label="Play Bairan">♪ <span>Play our song</span></button>
+  <audio id="song" loop preload="none">
+    <source src="bairan.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero">
+      <div class="glow"></div>
+      <p class="eyebrow">A little surprise from Mohit</p>
+      <h1>Hey, Diksha <span>❤️</span></h1>
+      <p class="hero-sub">One year, countless memories, and a thousand reasons to smile.</p>
+      <button class="primary" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">
+        Open your surprise 💌
+      </button>
+      <div class="scroll-hint">↓ keep going, beautiful ↓</div>
+    </section>
+
+    <section class="photo-section">
+      <div class="section-heading">
+        <span>01</span>
+        <h2>Us, in little moments 📸</h2>
+        <p>Every picture holds a tiny piece of our story.</p>
+      </div>
+      <div class="photo-card">
+        <img src="our-photo.jpg" alt="Our memories" />
+        <div class="photo-caption">You + Me = my favourite story ❤️</div>
+      </div>
+    </section>
+
+    <section class="letter" id="letter">
+      <div class="letter-card">
+        <div class="seal">♥</div>
+        <p class="small-title">A letter for you</p>
+        <h2>The day you came into my life...</h2>
+        <p>
+          The day you came into my life, it made my world brighter.
+          Somehow, you became the person who makes ordinary days feel special.
+        </p>
+        <p>
+          You also helped me remove so many of my insecurities. With you,
+          I feel more comfortable being myself, and that means more to me
+          than I can properly put into words.
+        </p>
+        <p>
+          One year with you has given me memories I never want to forget.
+          Thank you for being you, for making me smile, and for becoming
+          such a beautiful part of my life.
+        </p>
+        <p class="signature">Always yours,<br><span>Mohit ❤️</span></p>
+      </div>
+    </section>
+
+    <section class="reasons">
+      <div class="section-heading">
+        <span>02</span>
+        <h2>Why you are special to me 🌷</h2>
+      </div>
+      <div class="reason-grid">
+        <article><b>01</b><h3>You make life brighter</h3><p>Even normal days feel a little more beautiful when you're part of them.</p></article>
+        <article><b>02</b><h3>You make me feel safe</h3><p>You helped me become more comfortable with myself and my insecurities.</p></article>
+        <article><b>03</b><h3>You are my favourite person</h3><p>Out of all the people I could have met, I'm grateful our paths crossed.</p></article>
+        <article><b>04</b><h3>Our story is just beginning</h3><p>One year down. I hope there are many more chapters waiting for us.</p></article>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <div class="section-heading">
+        <span>03</span>
+        <h2>Our little story ✨</h2>
+      </div>
+      <div class="timeline-card">
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div><span>THE BEGINNING</span><h3>Instagram brought us together</h3><p>What started through social media slowly became something much more meaningful.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div><span>ONE YEAR</span><h3>365 days of us ❤️</h3><p>A year of conversations, smiles, memories, and moments that I'll always keep close.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div><span>RIGHT NOW</span><h3>Still choosing you</h3><p>And I'm excited for all the memories we haven't made yet.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="question-heart">💗</div>
+      <p class="eyebrow">One last thing...</p>
+      <h2>Diksha, will you be my Valentine? 🌹</h2>
+      <p id="questionText">I already know what my answer is. 😌</p>
+      <div class="buttons">
+        <button class="yes" id="yesBtn">YES, ALWAYS ❤️</button>
+        <button class="no" id="noBtn">No 🙈</button>
+      </div>
+      <div class="final-message" id="finalMessage">
+        <div class="confetti-heart">💖</div>
+        <h3>I knew it! 🥹❤️</h3>
+        <p>Happy Valentine's Day, Diksha.<br>Here's to us — today, tomorrow, and every beautiful day after.</p>
+        <span>— Mohit</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with too much love by Mohit for Diksha ❤️</footer>
+  <script src="script.js"></script>
+</body>
+</html>
